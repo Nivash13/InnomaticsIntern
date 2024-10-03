@@ -173,6 +173,7 @@ nav ul a:hover {
 
 .book-card img {
   width: 100px;
+  height: 150px;
   border-radius: 8px;
 }
 
@@ -235,7 +236,4 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-size: 0.9em;
-}
-h1,p{
-  color: #333;
 }
