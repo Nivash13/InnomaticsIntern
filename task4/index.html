@@ -3,89 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Books Project</title>
+    <title>myBooks - Discover Your Next Favorite Book</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">My Books</div>
-            <nav>
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-bar">☰</label>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#categories">Categories</a></li>
-                    <li><a href="#popular">Popular Books</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">myBooks</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#popular">Popular Books</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to My Books</h1>
-            <p>Your one-stop destination for amazing reads!</p>
-            <button class="primary-btn">Explore Now</button>
-        </div>
-    </section>
+    <main>
+        <section id="home">
+            <h1>Welcome to myBooks</h1>
+            <h3>Your Gateway to Great Books</h3>
+            <p>Discover and explore a wide range of books from different genres.</p>
+            <button>Browse Books</button>
+        </section>
 
-    <section id="categories" class="categories-section">
-        <h2>Categories</h2>
-        <div class="categories-list">
-            <div class="category-card">Fiction</div>
-            <div class="category-card">Non-Fiction</div>
-            <div class="category-card">Science</div>
-            <div class="category-card">Mystery</div>
-        </div>
-    </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="categories-list">
+                <div class="category-card">
+                    <h3>Fiction</h3>
+                </div>
+                <div class="category-card">
+                    <h3>Educational</h3>
+                </div>
+                <div class="category-card">
+                    <h3>Travel</h3>
+                </div>
+                <div class="category-card">
+                    <h3>Romance</h3>
+                </div>
+            </div>
+        </section>
 
-    <section id="popular" class="popular-section">
-        <h2>Popular Books</h2>
-        <div class="popular-books-list">
-            <div class="book-card">
-                <img src="images/book1.jpg" alt="Book 1">
-                <h3>Book Title 1</h3>
-                <p>Author 1</p>
+        <section id="popular">
+            <h2>Popular Books</h2>
+            <div class="popular-books-list">
+                <div class="book-card">
+                    <img src="image1.png" alt="Cover of The Great Adventure">
+                    <h3>The Great Adventure</h3>
+                </div>
+                <div class="book-card">
+                    <img src="image2.jpeg" alt="Cover of Jane Patterson & Mike Lupica">
+                    <h3>Jane Patterson & Mike Lupica</h3>
+                </div>
+                <div class="book-card">
+                    <img src="image3.jpeg" alt="Cover of Bound">
+                    <h3>Bound</h3>
+                </div>
             </div>
-            <div class="book-card">
-                <img src="images/book2.jpg" alt="Book 2">
-                <h3>Book Title 2</h3>
-                <p>Author 2</p>
-            </div>
-            <div class="book-card">
-                <img src="images/book3.jpg" alt="Book 3">
-                <h3>Book Title 3</h3>
-                <p>Author 3</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="primary-btn">Send Message</button>
-        </form>
-    </section>
+        <section id="about">
+            <h2>About myBooks</h2>
+            <p>myBooks helps you find the best books to read. Whether you like romance, education, or adventure, we have something for everyone!</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 My Books. All rights reserved.</p>
+        <p>&copy; 2024 myBooks. All rights reserved.</p>
     </footer>
 </body>
 </html>
