@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -12,10 +12,10 @@ function App() {
   return (
     <Router>
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/contact">Contact</a>
+        <a href="#/">Home</a>
+        <a href="#/about">About</a>
+        <a href="#/services">Services</a>
+        <a href="#/contact">Contact</a>
       </nav>
 
       <Routes>
