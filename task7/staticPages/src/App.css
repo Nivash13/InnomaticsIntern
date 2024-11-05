@@ -1,17 +1,53 @@
-body,html{
+/* General Reset */
+body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
-.home-container {
+/* Navigation Bar */
+nav {
+  background-color: #5696f6;
+  padding: 1em;
   text-align: center;
-  padding: 50px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure nav is on top */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Page Content Wrapper */
+.page-content {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 100px; /* Space for the fixed navbar */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home Page Styles */
 .home-container h1 {
   font-size: 3rem;
   color: #ffffff;
@@ -23,6 +59,7 @@ body,html{
   color: #ffffff;
 }
 
+/* Call-to-Action Button */
 .cta-btn {
   background-color: #ff5722;
   color: white;
@@ -38,11 +75,7 @@ body,html{
   background-color: #e64a19;
 }
 
-.about-container {
-  text-align: center;
-  padding: 50px;
-}
-
+/* About Page Styles */
 .about-container h2 {
   font-size: 2.5rem;
   color: #00bcd4;
@@ -55,11 +88,7 @@ body,html{
   margin: 0 auto;
 }
 
-.services-container {
-  text-align: center;
-  padding: 50px;
-}
-
+/* Services Page Styles */
 .services-container h2 {
   font-size: 2.5rem;
   color: #00bcd4;
@@ -85,11 +114,7 @@ body,html{
   color: #e64a19;
 }
 
-.contact-container {
-  text-align: center;
-  padding: 50px;
-}
-
+/* Contact Page Styles */
 .contact-container h2 {
   font-size: 2.5rem;
   color: #00bcd4;
@@ -124,6 +149,7 @@ body,html{
   background-color: #0097a7;
 }
 
+/* Input Styling */
 input {
   background-color: white;
   color: black;
@@ -137,29 +163,10 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #00bcd4; 
+  border-color: #00bcd4;
 }
 
-
-nav {
-  background-color: #5696f6;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover{
-  color: rgb(0, 0, 0);
-}
-
+/* Override Default H1 Color */
 h1 {
   color: #8e8e8e;
 }

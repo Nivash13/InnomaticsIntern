@@ -1,22 +1,23 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Design from './pages/services/Design';
 import Development from './pages/services/Development';
-import './App.css'; 
+import './App.css';
 
 function App() {
   return (
     <Router>
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/contact">Contact</a>
-      </nav>
+  <Link to="/">Home</Link>
+  <Link to="/about">About</Link>
+  <Link to="/services">Services</Link>
+  <Link to="/contact">Contact</Link>
+</nav>
 
       <Routes>
         <Route path="/" element={<Home />} />

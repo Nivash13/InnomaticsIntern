@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 const Services = () => {
   return (
-    <div className="services-container">
+    <div className="page-content services-container">
       <h2>Our Services</h2>
       <ul>
         <li><Link to="design">Design</Link></li>
